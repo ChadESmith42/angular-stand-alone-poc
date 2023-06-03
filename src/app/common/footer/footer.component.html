@@ -1,12 +1,12 @@
 <footer>
   <section>
-    <span class="brand">Coding By Chad</span>
-      &copy; {{ copyrightDateRange }}
+    <span class="brand">{{ title }}</span>
+      &copy; {{ copyrightDateRange }}. All rights reserved.
   </section>
   <section>
-    <div *ngFor="let link of links">
+    <div *ngFor="let link of links" class="links">
       <a [href]="link.url" [target]="link.target" [className]="link.styleClass">
-        <img *ngIf="link.icon" [src]="link.icon" [alt]="link.iconAltText" />
+        <img class="link-icon" *ngIf="link.icon" [src]="link.icon" [alt]="link.iconAltText" />
         {{ link.label }}
       </a>
     </div>

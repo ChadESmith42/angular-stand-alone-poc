@@ -10,4 +10,5 @@ import { Link } from './models/link.model';
 export class AppComponent {
   title = AppComponentConfiguration.title;
   links: Link[] = AppComponentConfiguration.links;
+  copyrightStartDate = AppComponentConfiguration.copyrightStartDate
 }

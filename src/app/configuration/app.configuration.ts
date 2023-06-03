@@ -1,5 +1,6 @@
+import { IAppComponentConfiguration } from '../models/configuration/IAppConfiguration.interface'
 
-export const AppComponentConfiguration = {
+export const AppComponentConfiguration: IAppComponentConfiguration = {
   title: 'Coding By Chad',
   links: [
     {
@@ -13,8 +14,8 @@ export const AppComponentConfiguration = {
       target: '_blank',
       label: 'GitHub',
       styleClass: '',
-      icon: '/icons/githubLogo.png',
-      iconAltText: 'GitHub logo'
+      icon: '/assets/icons/github_icon.svg',
+      iconAltText: '[GitHub logo]'
     },
     {
       url: 'https://twitter.com/MapGeek_Chad',
@@ -22,5 +23,6 @@ export const AppComponentConfiguration = {
       label: 'Twitter',
       styleClass: ''
     }
-  ]
+  ],
+  copyrightStartDate: 2019
 }

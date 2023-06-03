@@ -12,6 +12,7 @@ import { Link } from 'src/app/models/link.model';
 export class FooterComponent implements OnInit {
   @Input() copyrightStartYear?: number;
   @Input() links?: Link[];
+  @Input() title: string = '';
   copyrightDateRange: string = '';
   ngOnInit(): void {
     this.copyrightDateRange = this.configureCopyrightDateRange();
