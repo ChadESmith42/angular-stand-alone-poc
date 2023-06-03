@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AppComponentConfiguration } from './configuration/app.configuration';
+import { Link } from './models/link.model';
 
 @Component({
   selector: 'cbc-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'coding-by-chad';
+  title = AppComponentConfiguration.title;
+  links: Link[] = AppComponentConfiguration.links;
 }

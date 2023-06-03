@@ -1,0 +1,14 @@
+<footer>
+  <section>
+    <span class="brand">Coding By Chad</span>
+      &copy; {{ copyrightDateRange }}
+  </section>
+  <section>
+    <div *ngFor="let link of links">
+      <a [href]="link.url" [target]="link.target" [className]="link.styleClass">
+        <img *ngIf="link.icon" [src]="link.icon" [alt]="link.iconAltText" />
+        {{ link.label }}
+      </a>
+    </div>
+  </section>
+</footer>
