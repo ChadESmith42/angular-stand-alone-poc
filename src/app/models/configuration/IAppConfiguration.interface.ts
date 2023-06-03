@@ -1,7 +1,5 @@
-import { Link } from '../link.model';
+import { IFooterConfiguration } from './IFooterConfiguration.interface';
 
 export interface IAppComponentConfiguration {
-  links: Link[],
-  title: string,
-  copyrightStartDate: number
+  footer: IFooterConfiguration
 }

@@ -8,7 +8,7 @@ import { Link } from './models/link.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = AppComponentConfiguration.title;
-  links: Link[] = AppComponentConfiguration.links;
-  copyrightStartDate = AppComponentConfiguration.copyrightStartDate
+  title = AppComponentConfiguration.footer.title;
+  links?: Link[] = AppComponentConfiguration.footer.links;
+  copyrightStartDate = AppComponentConfiguration.footer.copyrightStartDate
 }

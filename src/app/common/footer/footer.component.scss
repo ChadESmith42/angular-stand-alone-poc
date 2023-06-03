@@ -7,7 +7,7 @@
 
 .links {
   display: inline-flex;
-
+  margin: 1rem 0 0 0;
   a {
     padding: 1rem 2rem 1rem 0;
     text-decoration: none;
@@ -18,10 +18,9 @@
   }
 }
 
-.icon-link {
-  width: 2rem;
-  height: 2rem;
-  padding-right: 1.5rem;
+.link-icon {
+  padding-right: 0.5rem;
   text-decoration: none;
   color: black;
+  width: 2rem;
 }
