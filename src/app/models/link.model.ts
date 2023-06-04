@@ -4,5 +4,6 @@ export interface Link {
   label: string,
   styleClass: string,
   icon?: string,
-  iconAltText?: string
+  iconAltText?: string,
+  routerLink?: string
 }

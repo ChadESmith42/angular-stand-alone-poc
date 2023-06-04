@@ -1,7 +1,16 @@
-<header>
-  <h1>{{ title }}</h1>
-</header>
+<cbc-header
+  [title]="header.title"
+  [brandIcon]="header.brandIcon"
+  [links]="header.links"
+  [externalLinks]="header.externalLinks"
+  [loginButton]="header.loginButton"
+  [profileButton]="header.profileButton">
+</cbc-header>
 <main class="spacer">
-  <p>Main content here!</p>
+  <router-outlet></router-outlet>
 </main>
-<cbc-footer [title]="title" [copyrightStartYear]="copyrightStartDate" [links]="links"></cbc-footer>
+<cbc-footer
+  [title]="footer.title"
+  [copyrightStartYear]="footer.copyrightStartDate"
+  [links]="footer.links">
+</cbc-footer>

@@ -1,0 +1,19 @@
+.toolbar {
+  width: 100%;
+  .toolbar-title {
+    padding: 0 1rem 0 0;
+  }
+}
+
+mat-nav-list.list-horizontal {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  mat-list-item {
+    width: fit-content;
+    a {
+      text-decoration: inherit;
+      color: inherit
+    }
+  }
+}

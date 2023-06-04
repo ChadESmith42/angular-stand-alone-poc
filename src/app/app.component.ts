@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AppComponentConfiguration } from './configuration/app.configuration';
-import { Link } from './models/link.model';
+import { IFooterConfiguration } from './models/configuration/IFooterConfiguration.interface';
+import { IHeaderConfiguration } from './models/configuration/IHeaderConfiguration.interface';
 
 @Component({
   selector: 'cbc-root',
@@ -8,7 +9,18 @@ import { Link } from './models/link.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = AppComponentConfiguration.footer.title;
-  links?: Link[] = AppComponentConfiguration.footer.links;
-  copyrightStartDate = AppComponentConfiguration.footer.copyrightStartDate
+  footer: IFooterConfiguration = {
+    title: AppComponentConfiguration.footer.title,
+    links: AppComponentConfiguration.footer.links,
+    copyrightStartDate: AppComponentConfiguration.footer.copyrightStartDate
+  };
+  header: IHeaderConfiguration = {
+    title: AppComponentConfiguration.header.title,
+    brandIcon: AppComponentConfiguration.header.brandIcon,
+    links: AppComponentConfiguration.header.links,
+    externalLinks: AppComponentConfiguration.header.externalLinks,
+    loginButton: AppComponentConfiguration.header.loginButton,
+    profileButton: AppComponentConfiguration.header.profileButton
+  };
+
 }

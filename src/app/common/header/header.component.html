@@ -1,3 +1,17 @@
-<header>
-  <h1>Coding By Chad</h1>
-</header>
+<mat-toolbar class="toolbar">
+  <span class="brand toolbar-title">{{ title }}</span>
+  <span *ngIf="brandIcon">
+    <a [routerLink]="[brandIcon.link]" routerLinkActive="router-link-active" ]>
+      <img [src]="brandIcon.iconSrc" [alt]="brandIcon.iconAltText" />
+      {{ brandIcon.label }}
+    </a>
+  </span>
+  <mat-nav-list class="list-horizontal">
+    <mat-list-item>
+      <a mat-raised-button color="primary" [routerLink]="['/']">Home</a>
+    </mat-list-item>
+    <mat-list-item *ngFor="let link of links; index as i">
+      <a mat-button color="accent" [ngClass]="link.style" [routerLink]="link.link">{{ link.label }}</a>
+    </mat-list-item>
+  </mat-nav-list>
+</mat-toolbar>
