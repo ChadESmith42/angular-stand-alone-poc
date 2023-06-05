@@ -1,0 +1,17 @@
+mat-card.card-container {
+  max-width: 25rem;
+  margin: 1rem 1.5rem 1.25rem 1rem;
+  mat-card-title-group {
+    mat-card-title {
+      font-family: "Indie Flower", cursive;
+      font-weight: 700;
+      font-size: 1.5rem;
+      padding: 0 0 0.5rem 0;
+    }
+    mat-card-subtitle {
+      font-family: "Indie Flower", cursive;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+  }
+}

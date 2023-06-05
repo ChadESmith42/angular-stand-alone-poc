@@ -1,1 +1,25 @@
-<p>card works!</p>
+<mat-card [id]="card.id" class="card-container">
+  <mat-card-header class="card-header">
+    <mat-card-title-group>
+      <mat-card-title>{{ card.title }}</mat-card-title>
+      <mat-card-subtitle *ngIf="card.subtitle">{{ card.subtitle }}</mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content class="card-content">
+    <p *ngFor="let d of card.description">{{ d }}</p>
+  </mat-card-content>
+  <mat-card-actions *ngIf="card.actionButtons && card.actionButtons.length > 0" class="card-actions">
+    <a *ngFor="let button of card.actionButtons; index as id" mat-raised-button
+    color="primary"
+    [routerLink]="[button.routerLink.url]"
+    [target]="button.routerLink.target"
+    [id]="button.id"
+    class="card-action-button">
+      <img *ngIf="button.icon"
+        [src]="button.icon.url"
+        [alt]="button.icon.altText"
+        class="card-button-icon"/>
+      {{ button.label }}
+    </a>
+  </mat-card-actions>
+</mat-card>

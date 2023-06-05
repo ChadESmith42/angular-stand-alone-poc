@@ -1,0 +1,9 @@
+.home-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.home-card {
+  flex: 2;
+}

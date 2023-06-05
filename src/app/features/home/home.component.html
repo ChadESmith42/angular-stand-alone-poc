@@ -1,1 +1,9 @@
-<p>home works!</p>
+<h2>Welcome!</h2>
+<div>
+  <p>
+    Coding By Chad is a personal project created and maintained by Chad Smith, a software engineer based in Kansas City, Missouri.
+  </p>
+</div>
+<div *ngFor="let card of cards" class="home-card-container">
+  <cbc-card [card]="card" class="home-card"></cbc-card>
+</div>
