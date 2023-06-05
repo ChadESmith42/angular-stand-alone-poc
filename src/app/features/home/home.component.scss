@@ -1,13 +1,13 @@
 .home-container {
   margin: 1rem 0 1.25rem 1rem;
+  width: 100%;
 }
 
 .home-card-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
 }
 
 .home-card {
-  flex: 2;
+  flex: 1 0 auto;
 }

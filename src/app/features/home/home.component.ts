@@ -10,15 +10,15 @@ export class HomeComponent {
   cards: ICard[] = [
     {
       id: 0,
-      title: 'Projects',
-      subtitle: 'A few personal projects to showcase my abilities.',
+      title: 'Honestatis',
+      subtitle: 'Ius ipsum delicatissimi ex.',
       description: [
-        'These are personal projects that I created and maintain to display my creative abilities.'
+        'Omnis maiorum appetere ad eos, cum no possit inimicus scriptorem. Te wisi liber referrentur nec. Ad probo oratio animal sea, ius dico eleifend ea, at invenire scriptorem sit. Ut eius vivendo honestatis vis, ad pri liber aliquando, in ius fabulas dissentiet.'
       ],
       actionButtons: [
         {
           id: 'launch-projects',
-          label: 'View Project Details',
+          label: 'Honestatis',
           routerLink: {
             url: '/projects',
             target: '_self'
@@ -28,13 +28,13 @@ export class HomeComponent {
     },
     {
       id: 2,
-      title: 'Resume',
-      subtitle: 'An overview of my professional experience.',
-      description: ['My work experience demonstrates just some of my skills and abilities. I\'ve included the associated technologies for each position to help illustrate my technical experience.', 'My resume was last updated as of June 2023.'],
+      title: 'Laboramus',
+      subtitle: 'Solet quando eos ad.',
+      description: ['Rebum democritum vim in, sit in ullum inani dissentiet. An usu solum mollis deseruisse, id mazim tempor inimicus his, ad tation consequat rationibus nam. Unum efficiendi ea per. Ad mel solum error legere. Sit et soleat albucius senserit, falli interesset qui in.', 'Pro ne soluta constituam, ut wisi adolescens repudiandae cum. Singulis dissentiet cum eu. Id graecis habemus laboramus has, vim no invenire voluptatum. In est sale aeque, malis tollit qui ea. Homero detraxit mediocrem per ei, aliquid dolorum id vix. At intellegat cotidieque cum, illud audire nonumes ex usu.'],
       actionButtons: [
         {
           id: 'launch-resume',
-          label: 'View Resume',
+          label: 'Laboramus',
           routerLink: {
             url: '/resume',
             target: '_self'
@@ -44,13 +44,13 @@ export class HomeComponent {
     },
     {
       id: 3,
-      title: 'Links',
-      subtitle: 'A few external sites of interest.',
-      description: ['These are some external sites that will provide additional insight into my experience.'],
+      title: 'Facilis',
+      subtitle: 'Ex dictas consulatu sententiae vel.',
+      description: ['Duo ex officiis invenire moderatius, usu no petentium liberavisse. Et viderer definitionem cum, ex ferri dolor omnesque sed. Pri expetenda posidonium assueverit id, sea cu enim mutat illud. Nam probo facilis at, cu malis latine nusquam pro. Duo at lorem dicat, an vel doming liberavisse. Sed minim omnes postea at. Eu has aliquip disputationi vituperatoribus.'],
       actionButtons: [
         {
           id: 'launch-links',
-          label: 'View Links',
+          label: 'Facilis',
           routerLink: {
             url: '/links',
             target: '_self'
@@ -58,5 +58,5 @@ export class HomeComponent {
         }
       ]
     }
-  ]
+  ];
 }

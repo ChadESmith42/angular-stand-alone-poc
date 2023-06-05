@@ -2,7 +2,7 @@ import { IAppComponentConfiguration } from '../models/configuration/IAppConfigur
 
 export const AppComponentConfiguration: IAppComponentConfiguration = {
   footer: {
-    title: 'Coding By Chad',
+    title: 'Configurable Library Components',
     links: [
       {
         url: 'https://linkedin.com/in/chadesmith',
@@ -32,7 +32,7 @@ export const AppComponentConfiguration: IAppComponentConfiguration = {
     copyrightStartDate: 2018
   },
   header: {
-    title: 'Coding By Chad',
+    title: 'Configurable Library Components',
     brandIcon: {
       link: '/',
       label: '',
@@ -42,17 +42,17 @@ export const AppComponentConfiguration: IAppComponentConfiguration = {
     links: [
       {
         link: '/projects',
-        label: 'Projects',
+        label: 'Honestatis',
         style: 'header-link'
       },
       {
         link: '/resume',
-        label: 'Resume',
+        label: 'Laboramus',
         style: 'header-link'
       },
       {
         link: '/links',
-        label: 'Links',
+        label: 'Facilis',
         style: 'header-link'
       }
     ],

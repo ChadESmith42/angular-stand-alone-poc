@@ -14,4 +14,10 @@
       <a mat-button color="accent" [ngClass]="link.style" [routerLink]="link.link">{{ link.label }}</a>
     </mat-list-item>
   </mat-nav-list>
+  <span *ngIf="profileButton && isUserAuthenticated">
+    <a [routerLink]="profileButton.link" mat-raised-button color="accent" (click)="authorizeUser()">{{ profileButton.label }}</a>
+  </span>
+  <span *ngIf="loginButton && !isUserAuthenticated">
+    <a [routerLink]="loginButton.link" mat-raised-button color="accent" (click)="authorizeUser()">{{ loginButton.label }}</a>
+  </span>
 </mat-toolbar>

@@ -20,4 +20,9 @@ export class HeaderComponent {
   @Input() links?: IRouterLink[];
   @Input() loginButton?: IRouterLink;
   @Input() profileButton?: IRouterLink;
+  isUserAuthenticated: boolean = false;
+
+  public authorizeUser(): void {
+    this.isUserAuthenticated = !this.isUserAuthenticated;
+  }
 }

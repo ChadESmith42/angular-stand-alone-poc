@@ -1,4 +1,4 @@
-mat-card.card-container {
+mat-card {
   max-width: 25rem;
   margin: 1rem 1.5rem 1.25rem 1rem;
   mat-card-title-group {
@@ -13,5 +13,8 @@ mat-card.card-container {
       font-weight: 700;
       font-size: 1.25rem;
     }
+  }
+  .card-description {
+    margin: 0 0.75rem 1rem 0;
   }
 }
